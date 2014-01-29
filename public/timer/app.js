@@ -11,23 +11,20 @@ var app;
 			this.scope = $scope;
 			this.scope.ctrl = this;
 			this.timeout = $timeout;
-			this.alarmSound = new Audio("/alarm.mp3");
+			this.alarmSound = new Audio("alarm.mp3");
 			this.alarmSound.addEventListener('ended', function () {
-				console.log("Alarm ended")
 				this.currentTime = 0;
 				this.play();
 			}, false);
 
 			this.scope.$on('timer-tick', function (event, args) {
 				if (args.millis <= 1000) {
-					console.log("ALERT");
 					_this.timeout(function () {
 						_this.alarmSound.play();
 						return _this.bg = "alert";
 					});
 				}
 				else if (args.millis <= 10000) {
-					console.log("WARN");
 					_this.timeout(function () {
 						return _this.bg = "warn";
 					});
