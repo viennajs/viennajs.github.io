@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jstimer" data-framework="typescript" manifest="manifest.appcache">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" sizes="180x180" href="/img/viejs-180x180.png">
+	<link rel="shortcut icon" sizes="360x360" href="/img/viejs-360x360.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/viejs-180x180.png">
+	<link rel="apple-touch-icon" sizes="360x360" href="/img/viejs-360x360.png">
+	<title>Talk Timer</title>
+</head>
+<body>
+<div ng-view></div>
+<footer>
+	<div class="link">
+		<a href="http://www.pichsenmeister.com">pichsenmeister.com</a>&nbsp;|&nbsp;<a href="https://github.com/viennajs">github.com/viennajs</a>
+	</div>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-timer/dist/angular-timer.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('load', function (e) {
+			window.applicationCache.addEventListener('updateready', function (e) {
+				if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+					if (confirm('A new version of this site is available. Load it?')) {
+						window.location.reload();
+					}
+				}
+			}, false);
+		}, false);
+	</script>
+</footer>
+</body>
+</html>

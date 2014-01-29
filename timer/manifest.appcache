@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2014-01-29:v1.3.1
+
+CACHE:
+index.html
+css/main.css
+partials/home.html
+app.js
+bower_components/angular/angular.min.js
+bower_components/angular-timer/dist/angular-timer.min.js
+alarm.mp3
+img/viejs-180x180.png
+img/viejs-360x360.png
+
+

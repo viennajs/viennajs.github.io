@@ -1,0 +1,33 @@
+.timer {
+	text-align: center;
+	padding: 30px;
+	margin: 10px;
+	background: #ccc;
+	font-size: 1.5em;
+	font-family: Arial, sans-serif;
+} 
+
+.timer-bg {
+	background: #ccc;
+}
+
+.timer-bg-warn {
+	background: #ffa500;
+}
+
+.timer-bg-alert {
+	background: #ff0000;
+}
+
+button {
+	background: #;
+	padding: 5px;
+	font-size: 0.8em;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.link {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}

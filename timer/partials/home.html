@@ -1,0 +1,32 @@
+<div ng-controller="homeCtrl" class="timer" ng-class="{normal:'timer-bg', warn:'timer-bg-warn', alert:'timer-bg-alert'}[ctrl.bg]">
+	<timer interval="1000" countdown="12" autostart="false">{{minutes}} minutes, {{seconds}} seconds</timer>
+	<div>
+		<button ng-click="ctrl.startTimer(12)" ng-disabled="ctrl.timerRunning">start</button>
+		<button ng-click="ctrl.pauseTimer()" ng-disabled="ctrl.timerRunning">resume</button>
+		<button ng-click="ctrl.stopTimer()" ng-disabled="!ctrl.timerRunning">stop</button>
+	</div>
+</div>
+<div ng-controller="homeCtrl" class="timer" ng-class="{normal:'timer-bg', warn:'timer-bg-warn', alert:'timer-bg-alert'}[ctrl.bg]">
+	<timer interval="1000" countdown="900" autostart="false">{{minutes}} minutes, {{seconds}} seconds</timer>
+	<div>
+		<button ng-click="ctrl.startTimer(900)" ng-disabled="ctrl.timerRunning">start</button>
+		<button ng-click="ctrl.pauseTimer()" ng-disabled="ctrl.timerRunning">resume</button>
+		<button ng-click="ctrl.stopTimer()" ng-disabled="!ctrl.timerRunning">stop</button>
+	</div>
+</div>
+<div ng-controller="homeCtrl" class="timer" ng-class="{normal:'timer-bg', warn:'timer-bg-warn', alert:'timer-bg-alert'}[ctrl.bg]">
+	<timer interval="1000" countdown="600" autostart="false">{{minutes}} minutes, {{seconds}} seconds</timer>
+	<div>
+		<button ng-click="ctrl.startTimer(600)" ng-disabled="ctrl.timerRunning">start</button>
+		<button ng-click="ctrl.pauseTimer()" ng-disabled="ctrl.timerRunning">resume</button>
+		<button ng-click="ctrl.stopTimer()" ng-disabled="!ctrl.timerRunning">stop</button>
+	</div>
+</div>
+<div ng-controller="homeCtrl" class="timer" ng-class="{normal:'timer-bg', warn:'timer-bg-warn', alert:'timer-bg-alert'}[ctrl.bg]">
+	<timer interval="1000" countdown="300" autostart="false">{{minutes}} minutes, {{seconds}} seconds</timer>
+	<div>
+		<button ng-click="ctrl.startTimer(300)" ng-disabled="ctrl.timerRunning">start</button>
+		<button ng-click="ctrl.pauseTimer()" ng-disabled="ctrl.timerRunning">resume</button>
+		<button ng-click="ctrl.stopTimer()" ng-disabled="!ctrl.timerRunning">stop</button>
+	</div>
+</div>
